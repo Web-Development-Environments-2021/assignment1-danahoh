@@ -1,7 +1,96 @@
-#menu
+.fixed-nav-bar 
+{ position: fixed; 
+top: 0; 
+left: 0; 
+z-index: 9999; 
+width: 100%; 
+height: 50px; 
+}
+
+
+.navi
 {
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: white;
+	background: rgb(144, 228, 226);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
 }
+/* .logo {
+	display: inline-block;
+	margin: 15px; 
+	float: left;
+	height: 60px;
+	width: auto; 
+	border-radius: 50%; 
+	left: 20px;
+  } */
+
+.logo{
+	height: 80px;
+	width: 90px;
+	position: fixed;
+	left: 20px;
+	top: 25px;
+}
+
+
+.navi ul
+{
+	display:flex;
+	width: 350px;
+}
+.navi ul li
+{
+	position:relative;
+	list-style: none;
+	width: 70px;
+	height: 70px;
+	z-index: 1;
+}
+.navi ul li a
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column ;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+}
+.navi ul li a .icon
+{
+	position: relative;
+	display: block;
+	line-height: 75px;
+	font-size: 1.5em;
+	text-align: center;
+	transition: 0.5s;
+}
+.navi ul li:hover a .icon
+{
+	transform: translateY(-35px);
+}
+.navi ul li a .text
+{
+	position: absolute;
+	font-weight: 400;
+	font-size: 0.75em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 0;
+	transform: translateY(20px);
+}
+.navi ul li:hover a .text
+{
+	opacity: 1;
+	transform: translateY(10px);
+
+}
+
+
+
