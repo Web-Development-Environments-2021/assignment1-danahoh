@@ -4,7 +4,8 @@ top: 0;
 left: 0; 
 z-index: 9999; 
 width: 100%; 
-height: 50px; 
+height: 100px;
+background-color: bisque;
 }
 
 
@@ -13,7 +14,7 @@ height: 50px;
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: burlywood;
+	background: bisque;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -21,8 +22,8 @@ height: 50px;
 }
 
 .logo{
-	height: 80px;
-	width: 90px;
+	height: 120px;
+	width: 120px;
 	position: fixed;
 	left: 20px;
 	top: 25px;
@@ -82,6 +83,7 @@ height: 50px;
 {
 	opacity: 1;
 	transform: translateY(10px);
+	font-family: fantasy;
 
 }
 .section
@@ -91,37 +93,7 @@ height: 50px;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-.hr-lines:before{
-	content:" ";
-	display: block;
-	height: 2px;
-	width: 130px;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	background: black;
-  }
-  .hr-lines{
-	position: relative;
-  }
-  
-  .hr-lines{
-	position: relative;
-	/*  new lines  */
-	max-width: 500px;
-	margin: 100px auto;
-	text-align: center;
-  }
-  .hr-lines:after{
-	content:" ";
-	height: 2px;
-	width: 130px;
-	background: black;
-	display: block;
-	position: absolute;
-	top: 50%;
-	right: 0;
-  }
+
 
 .image{
 	margin-left: 20px;
@@ -136,7 +108,56 @@ height: 50px;
 	width: 50%;
 
   }
+  
+html, body {
+	box-sizing: border-box;
+	font-family: sans-serif;
+  }
+  
 
+  
+  fieldset {
+	margin: auto;
+	max-width: 520px;
+	border-color: rgba(0, 0, 0, .25);
+	border-radius: 4px;
+  }
+  
+  fieldset legend {
+	font-weight: bold;
+	opacity: .75;
+  }
+  
+  #contact label,
+  #contact input,
+  #contact textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin-top: .75em;
+  }
+
+.Container {
+    width: 90%;
+    min-width: 500px;
+    margin: auto;
+}
+
+h2 {
+	width: 100%; 
+	text-align: center; 
+	border-bottom: 1px solid #000; 
+	line-height: 0.1em;
+	margin: 10px 0 20px; 
+	
+ } 
+ 
+ h2 span { 
+	 background:#fff; 
+	 padding:0 10px;
+
+ }
+  
   
 
 
